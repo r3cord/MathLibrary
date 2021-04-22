@@ -5,9 +5,13 @@ namespace MathLibrary
 	class DefiniteIntegral
 	{
 	public:
+		//Declaration of the rectangleMethod.
 		static double rectangleMethod(double(*function)(double), int numberOfRectangles, double xStart, double xEnd);
+		//Declaration of the trapezeMethod.
 		static double trapezeMethod(double(*function)(double), int numberOfTrapezes, double xStart, double xEnd);
-		static double simpsonMethod(double(*function)(double), int n, double xp, double xk);
-		static double monteCarloMethod(double(*function)(double), int n, double xp, double xk);
+		//Declaration of the simpsonMethod.
+		static double simpsonMethod(double(*function)(double), int numberOfParables, double xStart, double xEnd);
+		//Declaration of the monteCarloMethod.
+		static double monteCarloMethod(double(*function)(double), int numberOfPoints, double xStart, double xEnd);
 	};
 }
