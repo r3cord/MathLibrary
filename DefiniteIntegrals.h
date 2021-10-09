@@ -1,4 +1,6 @@
 #pragma once
+#include <iostream>
+#include <random>
 
 namespace MathLibrary
 {
@@ -13,5 +15,7 @@ namespace MathLibrary
 		static double simpsonMethod(double(*function)(double), int numberOfParables, double xStart, double xEnd);
 		//Declaration of the monteCarloMethod.
 		static double monteCarloMethod(double(*function)(double), int numberOfPoints, double xStart, double xEnd);
+		//Declaration of the gaussianSquaringMethod.
+		static double gaussianSquaringMethod(double coordsX[4], double coordsY[4]);
 	};
 }
